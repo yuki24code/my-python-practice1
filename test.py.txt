@@ -1,0 +1,14 @@
+#test.py
+import pandas as pd
+
+#簡単なデータフレーム（表）を作る
+data = {
+	"Item": ["Sleep Hours", "Study Hours", "Exercise Hours"],
+	"Value": [7.5, 4.0, 1.0]
+}
+
+df = pd.DataFrame(data)
+
+print("---　自分の生活データサンプル　---")
+print(df)
+print(f"平均活動時間: {df['Value'].mean()}時間")
